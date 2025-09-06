@@ -15,6 +15,48 @@
     <span id="status">Статус: файл не загружен</span>
   </div>
 
+  <!-- Панель инструментов -->
+<div class="toolbar">
+    <button id="handTool" title="Инструмент 'Рука' (Горячая клавиша: H)">✋ Рука</button>
+    <button id="pipetteTool" title="Инструмент 'Пипетка' (Горячая клавиша: I)">🎯 Пипетка</button>
+  </div>
+  
+  <!-- Канвас для отображения изображения -->
+  <canvas id="imageCanvas"></canvas>
+  
+  <!-- Панель информации для пипетки -->
+  <div id="colorInfo" class="color-info hidden">
+    <h3>Информация о цветах</h3>
+  
+    <div class="color-panel">
+      <div>
+        <h4>Цвет A</h4>
+        <div class="swatch" id="colorA-swatch"></div>
+        <p id="colorA-coords">Координаты: x=–, y=–</p>
+        <ul>
+          <li title="Красный, Зеленый, Синий (0-255)">RGB: <span id="colorA-rgb">–</span></li>
+          <li title="Трёхмерное пространство: X, Y, Z (видимый спектр света)">XYZ: <span id="colorA-xyz">–</span></li>
+          <li title="Lab: светлота и два цветовых канала">Lab: <span id="colorA-lab">–</span></li>
+          <li title="OKLCH: новое восприятие цвета — L (светлота), C (насыщенность), H (оттенок)">OKLch: <span id="colorA-oklch">–</span></li>
+        </ul>
+      </div>
+  
+      <div>
+        <h4>Цвет B</h4>
+        <div class="swatch" id="colorB-swatch"></div>
+        <p id="colorB-coords">Координаты: x=–, y=–</p>
+        <ul>
+          <li>RGB: <span id="colorB-rgb">–</span></li>
+          <li>XYZ: <span id="colorB-xyz">–</span></li>
+          <li>Lab: <span id="colorB-lab">–</span></li>
+          <li>OKLch: <span id="colorB-oklch">–</span></li>
+        </ul>
+      </div>
+    </div>
+  
+    <h4 id="contrastInfo">Выберите два цвета для расчета контраста</h4>
+  </div>
+
   <canvas id="canvas"></canvas>
 
   <!-- Модальное окно -->
