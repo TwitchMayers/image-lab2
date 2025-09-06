@@ -14,6 +14,9 @@
 - **ЛР‑4: Слои и альфа-каналы**  
   👉 [https://twitchmayers.github.io/image-lab2/lr4/](https://twitchmayers.github.io/image-lab2/lr4/)
 
+- **ЛР-5**
+  👉 [https://twitchmayers.github.io/image-lab2/lr5](https://twitchmayers.github.io/image-lab2/lr5/)
+
 ## Репозиторий
 👉 [https://github.com/TwitchMayers/image-lab2](https://github.com/TwitchMayers/image-lab2)
 

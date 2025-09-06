@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+#workspace {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+.dialog {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

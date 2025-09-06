@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ЛР-5: Градационные преобразования</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>ЛР-5: Градационные преобразования (Curves)</h2>
+  <div id="workspace">
+    <canvas id="canvas" width="500" height="400"></canvas>
+  </div>
+  <div>
+    <button id="openCurves">Градационная коррекция (Curves)</button>
+  </div>
+
+  <!-- Диалоговое окно -->
+  <div id="curvesDialog" class="dialog">
+    <h3>Curves (градационная коррекция)</h3>
+    <canvas id="histogramCanvas" width="256" height="256"></canvas>
+
+    <div>
+      Точка 1:
+      X <input id="x1" type="number" min="0" max="255" value="0">
+      Y <input id="y1" type="number" min="0" max="255" value="0">
+    </div>
+    <div>
+      Точка 2:
+      X <input id="x2" type="number" min="0" max="255" value="255">
+      Y <input id="y2" type="number" min="0" max="255" value="255">
+    </div>
+
+    <label>
+      <input type="checkbox" id="preview"> Предпросмотр
+    </label>
+
+    <div>
+      <button id="applyCurves">Применить</button>
+      <button id="resetCurves">Сбросить</button>
+      <button id="closeCurves">Закрыть</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
