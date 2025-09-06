@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 20px;
+  }
+  
+  #workspace {
+    margin-right: 20px;
+  }
+  
+  #canvas {
+    border: 1px solid #000;
+    background: #fff;
+  }
+  
+  #layer-panel {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #layers li, #alpha-channels li {
+    border: 1px solid #ddd;
+    margin: 6px 0;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+  }
+  
+  .layer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .active {
+    background: #eef;
+  }
+  
+  .preview {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #aaa;
+    margin-top: 5px;
+  }
+  
+  .controls {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }

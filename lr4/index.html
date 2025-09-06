@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ЛР-4: Работа со слоями и альфа-каналами</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ЛР-4: Работа со слоями и альфа-каналами</h1>
+
+  <div id="workspace">
+    <canvas id="canvas" width="600" height="400"></canvas>
+  </div>
+
+  <div id="layer-panel">
+    <h2>Слои</h2>
+    <button id="addColorLayer">➕ Слой (цвет)</button>
+    <input type="file" id="uploadLayer" accept="image/*">
+    <ul id="layers"></ul>
+
+    <h2>Альфа-каналы</h2>
+    <ul id="alpha-channels"></ul>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
