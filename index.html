@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Лаба 2: Масштабирование изображений</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ЛР-2 Масштабирование изображений</h1>
+
+  <div id="controls">
+    <input type="file" id="fileInput" accept="image/*,.gb7">
+    <label>Масштаб (%): <input type="range" id="scaleRange" min="12" max="300" value="100"></label>
+    <button id="resizeBtn">Изменить размер...</button>
+    <span id="status">Статус: файл не загружен</span>
+  </div>
+
+  <canvas id="canvas"></canvas>
+
+  <!-- Модальное окно -->
+  <dialog id="resizeDialog">
+    <form method="dialog">
+      <h2>Изменение размера</h2>
+      <p>Исходное разрешение: <span id="origSize">0x0</span></p>
+      <p>Целевое разрешение: <span id="newSize">0x0</span></p>
+
+      <label>Ширина: <input type="number" id="newWidth"></label>
+      <label>Высота: <input type="number" id="newHeight"></label>
+      <label><input type="checkbox" id="keepRatio" checked> Сохранять пропорции</label>
+
+      <label>Алгоритм:
+        <select id="interpSelect">
+          <option value="bilinear">Билинейная</option>
+          <option value="nearest">Ближайший сосед</option>
+        </select>
+      </label>
+      <div>
+        <button value="ok">OK</button>
+        <button value="cancel">Отмена</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="main.js"></script>
+</body>
+</html>
