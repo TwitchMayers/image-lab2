@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  canvas {
+    border: 1px solid #000;
+    margin-bottom: 10px;
+  }
+  
+  .menu {
+    margin: 10px 0;
+  }
+  
+  button {
+    margin-right: 5px;
+  }
+  
+  .dialog {
+    display: none;
+    position: fixed;
+    top:0;left:0;right:0;bottom:0;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dialog-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  
+  #kernelGrid {
+    margin: 10px 0;
+  }
+  
+  #kernelGrid input {
+    width: 40px;
+    text-align: center;
+  }

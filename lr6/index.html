@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ЛР-6: Фильтрация и сохранение изображений</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>ЛР-6: Фильтрация и сохранение изображений</h2>
+
+  <canvas id="canvas" width="500" height="400"></canvas>
+  <div class="menu">
+    <button id="openKernel">Custom Kernel</button>
+    <button id="applyMedian">Медианный фильтр</button>
+    <button id="savePng">Сохранить PNG</button>
+    <button id="saveJpg">Сохранить JPG</button>
+    <button id="saveGb7">Сохранить GB7</button>
+  </div>
+
+  <!-- Диалоговое окно ядра -->
+  <div id="kernelDialog" class="dialog">
+    <div class="dialog-content">
+      <h3>Фильтрация с ядром (3x3)</h3>
+
+      <label for="presetSelect">Пресет:</label>
+      <select id="presetSelect">
+        <option value="identity">Тождественное</option>
+        <option value="sharpen">Повышение резкости</option>
+        <option value="gauss">Гаусс 3×3</option>
+        <option value="blur">Размытие</option>
+        <option value="prewittX">Прюитт X</option>
+        <option value="prewittY">Прюитт Y</option>
+      </select>
+
+      <table id="kernelGrid"></table>
+
+      <label>
+        <input type="checkbox" id="previewKernel"> Предпросмотр
+      </label>
+
+      <div class="buttons">
+        <button id="applyKernel">Применить</button>
+        <button id="resetKernel">Сбросить</button>
+        <button id="closeKernel">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
